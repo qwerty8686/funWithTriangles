@@ -1,2 +1,2 @@
 # funWithTriangles
-Created with CodeSandbox
+An App where you can learn about triangles.
