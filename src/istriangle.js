@@ -7,12 +7,16 @@ var inputs = document.querySelectorAll(".angle-input");
 function isTriangleHandler() {
   var total = 0;
   for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value < 0) {
+      message.innerText = "Angles cannot be negative";
+      return;
+    }
     total = total + Number(inputs[i].value);
   }
   if (total === 180) {
-    message.innerText = "Triangle can be formed with these angles";
+    message.innerText = "Triangle can be formed with these angles 😍";
   } else {
-    message.innerText = "Triangle cannot be formed with these angles";
+    message.innerText = "Triangle cannot be formed with these angles 🤐";
   }
 }
 
