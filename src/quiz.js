@@ -19,12 +19,16 @@ function quizHandler() {
   var score = 0;
   var formAns = new FormData(form);
   for (var ans of formAns.values()) {
-    if (ans === answers[i]) {
-      score = score + 1;
+    if (ans) {
+      if (ans === answers[i]) {
+        score = score + 1;
+      }
+      i++;
+      message.innerText = "Congrats!🥳 Your Score is " + score;
+    } else {
+      message.innerText = "Select options";
     }
-    i++;
   }
-  message.innerText = "Congrats!🥳 Your Score is " + score;
 }
 
 button.addEventListener("click", quizHandler);

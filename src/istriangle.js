@@ -7,6 +7,10 @@ var inputs = document.querySelectorAll(".angle-input");
 function isTriangleHandler() {
   var total = 0;
   for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value === "") {
+      message.innerText = "";
+      return;
+    }
     if (inputs[i].value < 0) {
       message.innerText = "Angles cannot be negative";
       return;

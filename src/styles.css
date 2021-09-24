@@ -35,7 +35,7 @@ body {
 .margin-top {
   margin-top: 1.5rem;
 }
-.lable-center {
+.label-center {
   display: block;
   text-align: center;
 }
@@ -71,13 +71,25 @@ button:hover {
   color: white;
   font-size: 1rem;
 }
-lable {
+label {
   font-size: larger;
 }
 .message {
   font-size: x-large;
 }
 img {
-  width: 4%;
-  height: 4%;
+  width: 3%;
+  height: 3%;
+}
+@media (max-width: 600px) {
+  img {
+    width: 10%;
+    height: 10%;
+  }
+  .nav-text {
+    font-size: small;
+  }
+  .sm-padding {
+    padding: 0rem 1rem;
+  }
 }
