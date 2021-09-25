@@ -9,8 +9,8 @@ function calcHypotenuse() {
       message.innerText = "";
       return;
     }
-    if (inputs[i].value < 0) {
-      message.innerText = "Values cannot be negative";
+    if (inputs[i].value <= 0) {
+      message.innerText = "Values cannot be negative or zero";
       return;
     }
     hypotenuse = hypotenuse + Number(inputs[i].value * inputs[i].value);

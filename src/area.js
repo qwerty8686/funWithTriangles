@@ -9,8 +9,8 @@ function calcArea() {
     message.innerText = "";
     return;
   }
-  if (input1.value < 0 || input2.value < 0) {
-    message.innerText = "Sides length cannot be negative";
+  if (input1.value <= 0 || input2.value <= 0) {
+    message.innerText = "Sides length cannot be negative or zero";
     return;
   }
   area = Number((input1.value * input2.value) / 2);

@@ -11,8 +11,8 @@ function isTriangleHandler() {
       message.innerText = "";
       return;
     }
-    if (inputs[i].value < 0) {
-      message.innerText = "Angles cannot be negative";
+    if (inputs[i].value <= 0) {
+      message.innerText = "Angles cannot be negative or zero";
       return;
     }
     total = total + Number(inputs[i].value);
